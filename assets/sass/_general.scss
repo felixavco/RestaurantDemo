@@ -1,0 +1,36 @@
+
+.row-start{
+    @include flex(row, flex-start, flex-end);
+}
+
+.row-end{
+    @include flex(row, flex-end, flex-end);
+}
+
+.row-center{
+    @include flex(row, center, flex-end);
+}
+
+.col-center{
+    @include flex(row, center, center);
+}
+
+.row-between{
+    @include flex(row, space-between, flex-end);
+}
+
+.row-around{
+    @include flex(row, space-around, flex-end);
+}
+
+.col-end{
+    @include flex(row, flex-end, center);
+}
+
+.centerY{
+    @include flex(row, space-between, center);
+}
+
+.btn-white{
+    @include boton(#cb74e0, 1.5rem);
+}

@@ -1,0 +1,46 @@
+footer{
+    background: $txt-main;
+    padding-top: 2.5rem;
+    padding-bottom: 3.5rem;
+    color: $gray2;
+    a,p,li{
+        color: $bg-white;
+    }
+    span{
+        font-weight: 500;
+    }
+    hr{
+        border: 0.1rem solid $gray1;
+    }
+
+    .signature{
+        h6, a{
+            color: lighten($gray1, 10%);
+        }
+    }
+
+    .social{
+        width: 90%;
+        margin: auto;
+        padding: 1rem 0;
+        @include flex(row, space-around, center);
+        .ico-cnt{
+            width: 40px; height: 40px;
+            background: $bg-white;
+            border-radius: 50%;
+            box-shadow: 2px 2px 3px #000000;
+            @include flex(row, center,center);
+           
+            a{
+                @include transition();
+                color: $main-red;
+                font-size: 1.5rem;
+            } 
+
+            a:hover{
+                font-size: 2rem;
+            }
+        }
+    }
+
+}

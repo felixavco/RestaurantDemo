@@ -1,0 +1,33 @@
+
+// Responsive mixins//
+    
+    //At Small device screen
+
+    @mixin small($screen: $small){
+        @media only screen and (min-width: $screen){
+            @content;
+        }
+    }
+
+    //At Medium device screen 
+    @mixin medium($screen: $medium){
+        @media only screen and (min-width: $screen){
+            @content;
+        }
+    }
+    
+    //At Large device screen
+    @mixin extra-lg($screen: $x-large){
+        @media only screen and (min-width: $screen){
+            @content;
+        }
+    }
+
+    //At Extra Large device screen
+    @mixin large($screen: $large){
+        @media only screen and (min-width: $screen){
+            @content;
+        }
+    }
+
+// Responsive mixins//

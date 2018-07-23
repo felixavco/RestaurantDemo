@@ -1,0 +1,17 @@
+#restaurant-menu {
+  margin: 2.5rem 0;
+  .menu-grid {
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    .menu-item-cont {
+      width: 100%;
+      margin-bottom: 1.7rem;
+      .card-title {
+        font-weight: 400;
+        text-shadow: 1px 1px 1px #000
+      }
+    }
+  }
+}
+

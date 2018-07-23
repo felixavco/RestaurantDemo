@@ -1,0 +1,50 @@
+header{
+    z-index: 1000;
+    .logo{
+        display: none;
+    }
+    .header-top{
+        display: none;
+    }
+    #menu-nav{
+        @include transition();
+    }
+    .menu-res{
+        z-index: 1000;
+        position: fixed;
+        left: 0%;
+        background: rgba($main-red, 0.95);
+        width: 65%;
+        height: 100vh;
+        padding: 4rem 0;
+        li{
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid rgba($gray2, 0.2);
+            a {
+                font-size: 1.5rem;
+                color: $gray2;
+            }
+        } li:hover{
+            border-bottom: 3px solid rgba($gray2, 0.7);
+        }
+    }
+    .menu-nav{
+        z-index: 1000;
+        position: fixed;
+        left: -100%;
+        background: rgba($gray1, 0.9);
+        width: 65%;
+        height: 100vh;
+        padding: 4rem 0;
+        li{
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid rgba($gray2, 0.2);
+            a {
+                font-size: 1.5rem;
+                color: $gray2;
+            }
+        } li:hover{
+            border-bottom: 3px solid rgba($gray2, 0.7);
+        }
+    }
+}

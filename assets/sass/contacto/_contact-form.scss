@@ -1,0 +1,44 @@
+#contacto{
+    padding: 3rem 0.5rem;
+    background: $bg-white;
+    .form-contacto{
+        h3{
+            margin: 0 0 1rem 0;
+            color: $txt-main;
+            font-family: $main-font;
+        }
+        form{
+            /* label color */
+            .input-field label {
+                color: $main-red;
+            }
+
+             /* label focus color */
+            .input-field input[type=text]:focus + label {
+                color: $main-red
+            }
+
+            /* label underline focus color */
+            .input-field input[type=text]:focus {
+                border-bottom: 1px solid $main-red;
+                box-shadow: 0 1px 0 0 #000;
+            }
+
+            .input-field input[type=email]:focus {
+                border-bottom: 1px solid $main-red;
+                box-shadow: 0 1px 0 0 #000;
+            }
+
+            .input-field textarea:focus {
+                border-bottom: 1px solid $main-red;
+                box-shadow: 0 1px 0 0 #000;
+            }
+
+            div{
+                .btn-enviar{
+                    background: $main-red;
+                }
+            }
+        }
+    }
+}

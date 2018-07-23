@@ -1,0 +1,51 @@
+
+@mixin flex($fd, $jc, $ai){
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+@mixin transition($a: all, $b: 500ms, $c: ease){
+    transition: $a $b $c;
+    -moz-transition: $a $b $c;
+    -o-transition: $a $b $c;
+}
+
+@mixin bg-img(){
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@mixin grey($a: 1){
+-ms-filter: grayscale($a);
+-webkit-filter: grayscale($a);
+-moz-filter: grayscale($a);
+-o-filter: grayscale($a);
+filter: grayscale($a);
+}
+
+@mixin title($fs: 1rem){
+    font-family: $font1;
+    text-shadow: 1px 1px 2px #000;
+    font-size: $fs;
+}
+
+@mixin boton($border-color: #0059ff, $fontSize: 1rem){
+    background: transparent;
+    border-radius: 0.3rem;
+    border: 2px solid $border-color;
+    font-size: $fontSize;
+    padding: 0.7rem 0.5rem;
+    color: $border-color;
+    font-weight: 600;
+    &:hover{
+        background: lighten( $border-color, 25% );
+        color: darken($border-color, 15%);
+    }
+    &:active{
+        background: transparent
+    }
+}

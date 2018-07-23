@@ -1,0 +1,103 @@
+#reservaciones{
+
+    .close-button{
+        .material-icons{
+            font-size: 2.5rem;
+            margin-right: 2rem;
+            margin-top: 1rem;
+            background: $main-red;
+            border-radius: 50%;
+        } .material-icons:hover{
+            cursor: pointer;
+        }   
+    }
+    h4{
+        color: $bg-white;
+        font-size: 1.8rem;
+    }
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.95);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 1000;
+    overflow: scroll;
+     /* label color */
+   .input-field label {
+    color: $bg-white;
+  }
+  /* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid $bg-white;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  .input-field  input[type=email]:focus {
+    border-bottom: 1px solid $bg-white;
+    box-shadow: 0 1px 0 0 #000;
+  }
+
+  .input-field input[type=number]:focus {
+    border-bottom: 1px solid $bg-white;
+    box-shadow: 0 1px 0 0 #000;
+  }
+  .input-field textarea:focus {
+    border-bottom: 1px solid $bg-white;
+    box-shadow: 0 1px 0 0 #000;
+  }
+
+  .input-field input, textarea{
+      color: $gray2;
+      font-size: 1.2rem;
+  }
+ 
+  .btn-reservacion{
+      background: $main-red;
+  }
+
+}
+
+ //Boton para mostrar el formulario
+ .rsv-cont{
+    position: fixed;
+    top: 70%;
+    right: -150px;
+    height: 50px;
+    width: 200px;
+    z-index: 1000;
+    @include transition();
+    @include flex(row, center, center);
+
+    .rsv{
+        width: 100%;
+        height: 100%;
+        @include flex(row, center, center);
+    }
+
+    .rsv-icon{
+        width: 50px;
+        background: $main-red;
+        border-radius: 0.5rem 0 0 0.5rem;
+        color: $bg-white;
+        font-size: 2.5rem;
+    }
+    .rsv-text{
+        width: 150px;
+        background: $bg-white;
+        h6{
+            font-size: 1.4rem;
+            color: $txt-main;
+        } 
+    }.rsv-text:hover{
+        cursor: pointer;
+        h6{
+            color: $main-red;
+            text-decoration: underline;
+        }
+    }
+}
+
+.rsv-cont:hover{
+    right: 0px;
+
+}

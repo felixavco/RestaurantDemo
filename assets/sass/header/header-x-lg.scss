@@ -1,0 +1,114 @@
+@include extra-lg{
+
+    header{
+        height: 110px;
+        background: rgba(0,0,0,0.3);
+        position: fixed;
+        width: 100%;
+        background-repeat: repeat;
+        background-position: right;
+        @include transition();
+
+        .header-cont{
+            height: auto;
+            .logo{
+                display: inline-block;
+                width: 100px;
+                height: 100%;
+                padding: 0.3rem;
+                position: absolute;
+                z-index: 1;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 0.3rem;
+                    box-shadow: 2px 2px 3px #000;
+                }
+            }
+            .header-top{
+                display: inline-block;
+                @include flex(row, flex-end, center);
+                height: 50px;
+                .contact-info{
+                    padding: 0 2rem;
+                    @include flex(row, flex-end, center);
+                    .contact-details{
+                        width: auto;
+                        display: inline-block;
+                        overflow: hidden;
+                        p{
+                            font-size: 1.1rem;
+                            padding: 0 0.5rem;
+                            color: snow
+                        }
+                    }
+                   
+                }
+                .social{
+                    width: 150px;
+                    padding: 0 0rem;
+                    // background: deeppink;
+                    @include flex(row, flex-end, center);
+                    div{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: $bg-white;
+                        margin-left: 1rem;
+                        box-shadow: 0px 0px 3px #000000;
+                        @include flex(row, center, center);
+                        @include transition();
+                        a{
+                            display: inline;
+                            font-size: 1.5rem;
+                            padding: 0 1rem;
+                            color: #980001;
+                            @include transition();
+                        } a:hover{
+                            font-size: 2rem;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .menu-nav{
+            z-index: 0;
+            position: relative;
+            background: transparent;
+            width: 100%;
+            height: 50px;
+            padding: 0 0;
+            @include transition();
+            ul{
+                @include flex(row, flex-end, center);
+                li{
+                    padding: 0.8rem 1.5rem;
+                    border-bottom: 3px solid transparent;
+                    a {
+                        font-size: 1.2rem;
+                        color: #fff;
+                        font-weight: bold;
+                        text-shadow: 1px 1px 2px #000;
+                    }
+                } li:hover{
+                    border-bottom: none;
+                    background: rgba($gray2, 0.3);
+                    border-radius: 0.1rem;
+                    border-bottom: 3px solid snow;
+                    a{
+                        color: snow;
+                    }
+                }
+
+            }
+            
+        }
+    }
+    .caption{
+        padding: 15% 0%; 
+    }
+
+}
+

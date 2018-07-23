@@ -1,0 +1,32 @@
+@import "screen-sizes";
+@import "variables";
+@import "mixins";
+@import "general";
+
+/*Working with Materialize*/
+@import "materialize-src/sass/materialize";
+
+//Header
+@import "header/btn-menu";
+@import "header/header";
+@import "header/header-med";
+@import "header/header-x-lg";
+
+@import "about/description";
+
+@import "contacto/contact-form";
+@import "contacto/map";
+
+@import "reservaciones/reservaciones";
+@import "reservaciones/reservaciones-lg";
+
+@import "footer/footer";
+
+@import "slider/slider";
+
+@import "galery/galery";
+@import "galery/galery-med";
+@import "galery/galery-lg";
+
+@import "menu/menu"
+

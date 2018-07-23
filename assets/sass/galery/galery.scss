@@ -1,0 +1,21 @@
+#galery{
+    .galery-cont{
+        background: #a52a2a;
+        width: 100%;
+        padding: 2rem 1.5rem;
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        .img-cnt{
+            margin-bottom: 1rem;
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border: 1px solid, greenyellow;
+            @include flex(row, center, center);
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
