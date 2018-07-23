@@ -1,7 +1,7 @@
 @include medium{
     #galery{
         .galery-cont{
-            background: #a52a2a;
+            background: $bg-red;
             width: 100%;
             padding: 2rem 1.5rem;
             @include flex(row, space-between, center);

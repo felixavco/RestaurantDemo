@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
 .row-start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8012,7 +8018,8 @@ footer {
         height: 100%; } }
 
 #restaurant-menu {
-  margin: 2.5rem 0; }
+  padding: 2.5rem 0;
+  background: #a52a2a; }
   #restaurant-menu .menu-grid {
     width: 85%;
     margin: 0 auto;
@@ -8020,6 +8027,35 @@ footer {
     #restaurant-menu .menu-grid .menu-item-cont {
       width: 100%;
       margin-bottom: 1.7rem; }
-      #restaurant-menu .menu-grid .menu-item-cont .card-title {
-        font-weight: 400;
-        text-shadow: 1px 1px 1px #000; }
+      #restaurant-menu .menu-grid .menu-item-cont .card .card-image {
+        overflow: hidden;
+        height: 260px; }
+        #restaurant-menu .menu-grid .menu-item-cont .card .card-image img {
+          width: 100%; }
+        #restaurant-menu .menu-grid .menu-item-cont .card .card-image .card-title {
+          font-weight: 400;
+          text-shadow: 1px 1px 1px #000; }
+
+@media only screen and (min-width: 600px) {
+  #restaurant-menu .menu-grid {
+    width: 55%; } }
+
+@media only screen and (min-width: 992px) {
+  #restaurant-menu .menu-grid {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 1.7rem; }
+    #restaurant-menu .menu-grid .menu-item-cont {
+      margin-bottom: 0; } }
+
+@media only screen and (min-width: 1200px) {
+  #restaurant-menu .menu-grid {
+    width: 98%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: .5rem; }
+    #restaurant-menu .menu-grid .menu-item-cont {
+      margin-bottom: 0; } }

@@ -1,5 +1,6 @@
 #restaurant-menu {
-  margin: 2.5rem 0;
+  padding: 2.5rem 0;
+  background: $bg-red;
   .menu-grid {
     width: 85%;
     margin: 0 auto;
@@ -7,11 +8,57 @@
     .menu-item-cont {
       width: 100%;
       margin-bottom: 1.7rem;
-      .card-title {
-        font-weight: 400;
-        text-shadow: 1px 1px 1px #000
+      .card{
+        .card-image{
+          overflow: hidden;
+          height: 260px;
+          img{
+            width: 100%;
+          }
+          .card-title {
+            font-weight: 400;
+            text-shadow: 1px 1px 1px #000
+          }
+        }
       }
     }
   }
 }
 
+@include medium {
+  #restaurant-menu {
+    .menu-grid {
+      width: 55%;
+      }
+    }
+}
+
+@include large {
+  #restaurant-menu {
+    .menu-grid {
+      width: 75%;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-gap: 1.7rem;
+      .menu-item-cont  {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@include extra-lg {
+  #restaurant-menu {
+    .menu-grid {
+      width: 98%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-gap: .5rem;
+      .menu-item-cont  {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
